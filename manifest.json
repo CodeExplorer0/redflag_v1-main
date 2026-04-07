@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "ClearHire — transparency in hiring",
+  "version": "1.0.0",
+  "description": "Promote transparency in hiring by detecting potential job scams and providing clear insights on LinkedIn, Indeed, Naukri.com and ZipRecruiter",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+   "*://*.linkedin.com/*",
+    "*://*.indeed.com/*",
+    "*://*.indeed.co.uk/*",
+    "*://*.indeed.ca/*",
+    "*://*.ziprecruiter.com/*",
+    "*://*.naukri.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+     "*://*.linkedin.com/*",
+  "*://*.indeed.com/*",
+  "*://*.indeed.co.uk/*",
+  "*://*.indeed.ca/*",
+  "*://*.ziprecruiter.com/*",
+  "*://*.naukri.com/*"
+      ],
+      "js": ["content_script.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ClearHire — transparency in hiring",
+    "default_icon": {
+      "16": "clearhire_logo.png",
+      "32": "clearhire_logo.png",
+      "48": "clearhire_logo.png",
+      "128": "clearhire_logo.png"
+    }
+  },
+  "icons": {
+    "16": "clearhire_logo.png",
+    "32": "clearhire_logo.png",
+    "48": "clearhire_logo.png",
+    "128": "clearhire_logo.png"
+  }
+}
