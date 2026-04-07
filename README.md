@@ -31,7 +31,6 @@ All processing happens locally in your browser, ensuring your activity and job s
 ## Screenshots
 
 ![App Screenshot](https://github.com/user-attachments/assets/6b6ecb2a-b39f-45e3-bdf6-312cae9fa457)
-![App Screenshot](https://drive.google.com/file/d/1ZRJhcd6JTmA7kO0rKzOB2GW-31N94RHk/view?usp=sharing)
 
 ## Supported Websites
 
